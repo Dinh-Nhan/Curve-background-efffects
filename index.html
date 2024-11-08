@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curve background efffects</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="menu_list">
+        <ion-icon name="home-outline"></ion-icon>
+        <span class="menu_text">Dash board</span>
+      </li>
+
+      <li class="menu_list">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+        <span class="menu_text">Report</span>
+      </li>
+
+      <li class="menu_list">
+        <ion-icon name="people-outline"></ion-icon>
+        <span class="menu_text">Customers</span>
+      </li>
+
+      <li class="menu_list">
+        <ion-icon name="home-outline"></ion-icon>
+        <span class="menu_text">Dash board</span>
+      </li>
+    </ul>
+    <script>
+      var Items = document.querySelectorAll(".menu_list");
+      Items.forEach((item) => {
+        item.addEventListener("click", function () {
+          Items.forEach((x) => x.classList.remove("active"));
+          item.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
